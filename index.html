@@ -1,125 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-
-    <title>CYELUS</title>
-
-    <link href="assets/css/hover_pack.css" rel="stylesheet">
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
-    <link href="assets/css/colors/color-74c9be.css" rel="stylesheet">    
-    <link href="assets/css/animations.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    
-    
-    <!-- JavaScripts needed at the beginning
-    ================================================== -->
-    
-    <!-- Main Jquery & Hover Effects. Should load first -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/hover_pack.js"></script>
-    
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="美国华人青年精英商会">
+    <meta name="author" content="美国华人青年精英商会">
+    <title>美国华人青年精英商会</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Retina.js - Load first for faster HQ mobile images. -->
+    <script src="assets/js/plugins/retina/retina.min.js"></script>
+    <!-- Font Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Default Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+    <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
+    <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="assets/css/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/jquery.fs.wallpaper.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins/animate.css" rel="stylesheet" type="text/css">
+    <!-- Vitality Theme CSS -->
+    <!-- Uncomment the color scheme you want to use. -->
+    <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-green.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-turquoise.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="assets/css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
+    <!-- IE8 support for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
+<!-- Alternate Body Classes: .modern and .vintage -->
 
-  <body>
+<body id="page-top">
+    <!-- Navigation -->
+    <!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="assets/img/logo.png" class="img-responsive" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">商会介绍</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#member">会员分类</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#events">近期活动</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#application">会员申请</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <header style="background-image: url('assets/img/bg-header.jpg');">
+        <div class="intro-content">
+            <img src="assets/img/logo_main.png" class="img-responsive img-centered" alt="">
+        </div>
+        <div class="scroll-down">
+            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn">
+                    <h1>美国华人青年精英商会</h1>
+                    <p>⻘商会本着“以⼈为本”的原则，⽤商会的影响⼒致⼒于:</p>
+                    <hr class="colored">
+                </div>
+            </div>
+            <div class="row text-center content-row">
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+                    <div class="about-content">
+                        <h3>团结华人精英</h3>
+                        <h3>重视个人力量</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
+                    <div class="about-content">
+                        <h3>宣扬诚信互助</h3>
+                        <h3>担当社会责任</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
+                    <div class="about-content">
+                        <h3>传播平等包容</h3>
+                        <h3>弘扬传统美德</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
+                    <div class="about-content">
+                        <h3>提倡遵纪守法</h3>
+                        <h3>促进中美交流</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray">
+        <div class="container text-center wow fadeIn">
+            <div class="row text-center">
+                <div class="col-lg-12 wow fadeIn">
+                    <h1>商会成⽴背景</h1>
+                    <hr class="colored">
+                </div>
+            </div>
+            <div class="row text-center content-row">
+                <p>
+                    由于历史原因美国华⼈形成了较为内闭的圈⼦，在中国⽂化的得以保留传承下来的同时，华⼈⽂化也保留了传统保守的⼀⾯，在美国本地群体中相对孤⽴。
+                    <br>
+                    随着⺴络科技的进步以及中⻄⽂化的进⼀步交流，新时代的华⼈展现了崭新的⾯⺫。
+                    <br>
+                    他们更加开放，更加接受新事物并愿意为梦想进⾏观念上和技术上的⾰新；
+                    <br>
+                    他们注重中美⽂化的融合，更加渴望融⼊美国本⼟⽂化同时并保留华⼈独特的思想⾯貌。
+                    <br>
+                    ⻘商会应运⽽⽣。
+                    我们代表的是⻘年，有新⽣⼒量，有激情，愿意创新的⼈。⽆论年龄。
+                    我们代表的是新⽂化、潮⽂化。
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="member">
+        <div class="container text-center wow fadeIn">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>会员分类</h2>
+                    <p>我们的成员是社会各个领域的精英：金融、投资、创业、房地产、法务、进出口、IT、文娱艺术等</p>
+                    <hr class="colored">
+                </div>
+            </div>
+            <div class="row content-row">
+                <div class="col-lg-12">
+                    <div class="about-carousel">
+                        <div class="item">
+                            <img src="assets/img/people/1.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Patricia West</h3>
+                                <hr class="colored">
+                                <p>Marketing Director</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/people/2.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Howard Scott</h3>
+                                <hr class="colored">
+                                <p>Sales Manager</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/people/3.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Kate Williams</h3>
+                                <hr class="colored">
+                                <p>Creative Director</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/people/4.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Amy Vanderbute</h3>
+                                <hr class="colored">
+                                <p>Graphic Artist</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/people/5.jpg" class="img-responsive" alt="">
+                            <div class="caption">
+                                <h3>Jeremy Davidson</h3>
+                                <hr class="colored">
+                                <p>Web Developer</p>
+                                <ul class="list-inline social">
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events">
+        <div class="container text-center wow fadeIn">
+            <h2>近期活动</h2>
+            <hr class="colored">
+        </div>
+    </section>
+    <section class="portfolio-carousel wow fadeIn">
+        <div class="item" style="background-image: url('assets/img/events/bg-1.jpg')">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-push-8">
+                        <div class="project-details">
+                            <span class="project-name">Painting ＋ Mentor</span>
+                            <span class="project-description">周六 4/18 @2:00-5:00</span>
+                            <hr class="colored">
+                            <p>details...<br><br><br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="application" class="cta-form bg-dark">
+        <div class="container text-center">
+            <h3>会员申请</h3>
+            <hr class="colored">
+            <p>
+                ⻘商会重视每个⼈的⼒量。
+                <br>
+                每个成员都享有独特权利和责任为⻘商会做贡献，为美国华⼈社区的发展做贡献。
+                <br>
+                我们欢迎每个成员积极参与并组织活动，利⽤⾃⼰的资源为他⼈创造价值。
+                <br>
+                我们将积极帮助每⼀个成员完成他们⼼愿和抱负。
+            </p>
+            <br>
+            <a href="#" class="btn btn-outline-light">我要申请</a>
+        </div>
+    </section>
+    <footer class="footer" style="background-image: url('assets/img/bg-footer.jpg')">
+        <div class="container text-center">
+            <section id="contact">
+                <div class="container wow fadeIn">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>联系我们</h2>
+                            <hr class="colored">
+                            <!-- <p>Please tell us about your next project and we will let you know what we can do to help you.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row">
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-map-marker"></i> 地址</h4>
+                    <p>3481 Melrose Place
+                        <br>Beverly Hills, CA 90210</p>
+                </div>
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-wechat"></i> 微信</h4>
+                    <p>公众号: cyelus</p>
+                    <img src="assets/img/qr.jpg" class="img-responsive img-centered" alt="">
+                </div>
+                <div class="col-md-4 contact-details">
+                    <h4><i class="fa fa-envelope"></i> Email</h4>
+                    <p><a href="mailto:cyelus@gmail.com">cyelus@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+<!--             <div class="row social">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+ -->            <div class="row copyright">
+                <div class="col-lg-12">
+                    <p class="small">&copy; 2015 美国华人青年精英商会</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core Scripts -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin Scripts -->
+    <script src="assets/js/plugins/jquery.easing.min.js"></script>
+    <script src="assets/js/plugins/classie.js"></script>
+    <script src="assets/js/plugins/cbpAnimatedHeader.js"></script>
+    <script src="assets/js/plugins/owl-carousel/owl.carousel.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.fs.wallpaper.js"></script>
+    <script src="assets/js/plugins/jquery.mixitup.js"></script>
+    <script src="assets/js/plugins/wow/wow.min.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+    <script src="assets/js/plugins/jqBootstrapValidation.js"></script>
+    <!-- Vitality Theme Scripts -->
+    <script src="assets/js/vitality.js"></script>
+</body>
 
-
-	<! ========== HEADERWRAP ==================================================================================================== 
-	=============================================================================================================================>
-    <div id="headerwrap">
-    	<div class="container">
-			<div class="row centered">
-				<div class="col-lg-8 col-lg-offset-2 mt">
-					<h1 class="animation slideDown">CYELUS</h1>
-				</div>
-				
-			</div><!-- /row -->
-    	</div><!-- /container -->
-    </div> <!-- /headerwrap -->
-
-	
-	<! ========== FOOTER ======================================================================================================== 
-	=============================================================================================================================>    
-	
-	<div id="f">
-		<div class="container">
-			<div class="row">
-				<!-- ADDRESS -->
-				<div class="col-lg-3">
-					<h4>Contact US</h4>
-					<p>
-						California
-					</p>
-					<p>
-						<i class="fa fa-mobile"></i> 888888888888<br/>
-						<i class="fa fa-envelope-o"></i> hello@gmail.com
-					</p>
-				</div><! --/col-lg-3 -->
-				
-				<!-- TWEETS -->
-				<div class="col-lg-3">
-					<h4>Recent Posts</h4>
-					<p>Follow us <b>@</b></p>
-				</div><!-- /col-lg-3 -->
-				
-				<!-- LATEST POSTS -->
-				<div class="col-lg-3">
-					<h4>Latest Posts</h4>
-					<p>
-						<i class="fa fa-angle-right"></i> A post with an image<br/>
-						<i class="fa fa-angle-right"></i> Other post with a video<br/>
-						<i class="fa fa-angle-right"></i> A full width post<br/>
-						<i class="fa fa-angle-right"></i> We talk about something nice<br/>
-						<i class="fa fa-angle-right"></i> Yet another single post<br/>
-					</p>
-				</div><!-- /col-lg-3 -->
-				
-				
-				
-			</div><! --/row -->
-		</div><!-- /container -->
-	</div><!-- /f -->
-	
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/retina.js"></script>
-
-
-  	<script>
-		$(window).scroll(function() {
-			$('.si').each(function(){
-			var imagePos = $(this).offset().top;
-	
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$(this).addClass("slideUp");
-				}
-			});
-		});
-	</script>    
-
-
-
-  
-  </body>
 </html>
